@@ -213,7 +213,7 @@ const FAQ = () => {
                 Call 0161 833 8661
               </a>
               <a
-                href="https://app.wattswitch.co.uk/quote"
+                href="https://app.watt.co.uk/company"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-secondary-600 transition-colors inline-block"

@@ -166,7 +166,7 @@ const HomePage = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <a 
-                  href="https://app.wattswitch.co.uk/quote"
+                  href="https://app.watt.co.uk/company"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group bg-white text-secondary-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-400 hover:text-white transition-all transform hover:scale-105 shadow-xl flex items-center justify-center"
@@ -456,7 +456,7 @@ const HomePage = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
-              href="https://app.wattswitch.co.uk/quote"
+              href="https://app.watt.co.uk/company"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-white text-secondary-600 px-10 py-5 rounded-full font-bold text-lg hover:bg-primary-400 hover:text-white transition-all transform hover:scale-105 shadow-2xl flex items-center justify-center"

@@ -101,7 +101,7 @@ const Navigation = () => {
               <span className="font-semibold">0161 833 8661</span>
             </a>
             <a 
-              href="https://app.wattswitch.co.uk/quote" 
+              href="https://app.watt.co.uk/company" 
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 py-3 rounded-full font-semibold hover:from-primary-600 hover:to-primary-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center"
@@ -187,7 +187,7 @@ const Navigation = () => {
                 <span className="font-semibold">0161 833 8661</span>
               </a>
               <a
-                href="https://app.wattswitch.co.uk/quote"
+                href="https://app.watt.co.uk/company"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full text-center bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 py-3 rounded-full font-semibold hover:from-primary-600 hover:to-primary-700 transition-all"

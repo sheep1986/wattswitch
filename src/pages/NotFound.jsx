@@ -20,7 +20,7 @@ const NotFound = () => {
             Back to Home
           </Link>
           <a 
-            href="https://app.wattswitch.co.uk/quote"
+            href="https://app.watt.co.uk/company"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary inline-flex items-center justify-center"

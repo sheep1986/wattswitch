@@ -31,7 +31,7 @@ const QuoteForm = () => {
       currentSupplier: formData.currentSupplier,
       monthlySpend: formData.monthlySpend
     })
-    window.open(`https://app.wattswitch.co.uk/quote?${params.toString()}`, '_blank')
+    window.open(`https://app.watt.co.uk/company?${params.toString()}`, '_blank')
   }
 
   return (
