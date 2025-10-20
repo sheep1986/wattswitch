@@ -165,18 +165,18 @@ const HomePage = () => {
                   href="https://app.watt.co.uk/company"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group bg-white text-secondary-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-400 hover:text-white transition-all transform hover:scale-105 shadow-xl flex items-center justify-center"
+                  className="btn-white"
                   aria-label="Compare business energy prices and get instant quote"
                 >
                   Compare Energy Prices Now
-                  <Zap className="ml-2 h-6 w-6 group-hover:rotate-12 transition-transform" />
+                  <Zap className="ml-2 h-5 w-5" />
                 </a>
                 <a 
                   href="tel:+441618338661" 
-                  className="group bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-secondary-600 transition-all flex items-center justify-center"
+                  className="btn-outline"
                   aria-label="Call Watt Switch energy experts on 0161 833 8661"
                 >
-                  <Phone className="mr-2 h-6 w-6 group-hover:animate-pulse" />
+                  <Phone className="mr-2 h-5 w-5" />
                   0161 833 8661
                 </a>
               </div>
@@ -509,18 +509,18 @@ const HomePage = () => {
               href="https://app.watt.co.uk/company"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white text-secondary-600 px-10 py-5 rounded-full font-bold text-lg hover:bg-primary-400 hover:text-white transition-all transform hover:scale-105 shadow-2xl flex items-center justify-center"
+              className="btn-white text-lg"
               aria-label="Compare business energy prices and get free quote"
             >
               Compare Business Energy Now
-              <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform" />
+              <ArrowRight className="ml-3 h-6 w-6" />
             </a>
             <a 
               href="tel:+441618338661" 
-              className="group bg-transparent border-2 border-white text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-white hover:text-secondary-600 transition-all flex items-center justify-center"
+              className="btn-outline border-white text-white text-lg hover:bg-white hover:text-secondary-600"
               aria-label="Call our business energy experts"
             >
-              <Phone className="mr-3 h-6 w-6 group-hover:animate-pulse" />
+              <Phone className="mr-3 h-6 w-6" />
               Speak to Energy Expert
             </a>
           </div>
