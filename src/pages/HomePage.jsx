@@ -4,6 +4,7 @@ import { ArrowRight, TrendingDown, Users, Award, Shield, Zap, Building, Phone, C
 import QuoteForm from '../components/QuoteForm'
 import SupplierLogos from '../components/SupplierLogos'
 import OptimizedImage from '../components/OptimizedImage'
+import TrustPilot from '../components/TrustPilot'
 
 const HomePage = () => {
   const [currentStat, setCurrentStat] = useState(0)
@@ -375,8 +376,11 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* TrustPilot Reviews Section */}
+      <TrustPilot />
+
       {/* Customer Reviews - Social Proof */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-gray-50">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Business Energy Switching Success Stories</h2>
@@ -401,6 +405,57 @@ const HomePage = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Image Gallery Section */}
+      <section className="py-16 bg-white">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Powering UK Business Energy Solutions</h2>
+            <p className="text-xl text-gray-600">From renewable energy to smart meters, we've got you covered</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="relative group overflow-hidden rounded-xl">
+              <img 
+                src="/images/modern-office.jpg" 
+                alt="Modern office with energy efficient lighting" 
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                <div className="p-6 text-white">
+                  <h3 className="text-xl font-bold mb-2">Office Energy Solutions</h3>
+                  <p className="text-sm">Reduce office energy costs by up to 40%</p>
+                </div>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden rounded-xl">
+              <img 
+                src="/images/solar.jpg" 
+                alt="Solar panels for business renewable energy" 
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                <div className="p-6 text-white">
+                  <h3 className="text-xl font-bold mb-2">Green Energy Options</h3>
+                  <p className="text-sm">100% renewable business electricity</p>
+                </div>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden rounded-xl">
+              <img 
+                src="/images/lightbulb.jpg" 
+                alt="Energy saving LED lightbulb" 
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                <div className="p-6 text-white">
+                  <h3 className="text-xl font-bold mb-2">Smart Energy Management</h3>
+                  <p className="text-sm">Monitor and optimize energy usage</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -35,7 +35,7 @@ function App() {
         <div className="min-h-screen flex flex-col bg-gray-50">
           <Navigation />
           <main className="flex-grow">
-            <Suspense fallback={<LoadingSpinner />}>
+            <Suspense fallback={<LoadingSpinner fullPage={true} message="Loading page..." />}>
               <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />

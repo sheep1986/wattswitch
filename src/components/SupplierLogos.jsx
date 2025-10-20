@@ -2,27 +2,61 @@ import React from 'react'
 
 const SupplierLogos = () => {
   const suppliers = [
-    { name: 'British Gas', color: 'from-blue-400 to-blue-600' },
-    { name: 'EDF Energy', color: 'from-orange-400 to-orange-600' },
-    { name: 'E.ON', color: 'from-red-400 to-red-600' },
-    { name: 'Scottish Power', color: 'from-green-400 to-green-600' },
-    { name: 'SSE', color: 'from-purple-400 to-purple-600' },
-    { name: 'Octopus Energy', color: 'from-pink-400 to-pink-600' }
+    { name: 'British Gas', image: '/supplier-logos/british-gas.png' },
+    { name: 'EDF Energy', image: '/supplier-logos/edf.png' },
+    { name: 'E.ON Next', image: '/supplier-logos/eon-next.png' },
+    { name: 'Scottish Power', image: '/supplier-logos/scottish-power.png' },
+    { name: 'Crown Gas & Power', image: '/supplier-logos/crown.png' },
+    { name: 'Opus Energy', image: '/supplier-logos/opus.png' },
+    { name: 'Total Energies', image: '/supplier-logos/total.png' },
+    { name: 'Smartest Energy', image: '/supplier-logos/smartest.png' },
+    { name: 'YÜ Energy', image: '/supplier-logos/yu.png' },
+    { name: 'Pozitive Energy', image: '/supplier-logos/pozitive.png' },
+    { name: 'SEFE Energy', image: '/supplier-logos/sefe.png' },
+    { name: 'Drax', image: '/supplier-logos/drax.webp' },
+    { name: 'Everflow', image: '/supplier-logos/everflow.webp' },
+    { name: 'Utilita', image: '/supplier-logos/utilita.png' },
+    { name: 'Valda Energy', image: '/supplier-logos/valda.png' },
+    { name: 'Water Plus', image: '/supplier-logos/water-plus.png' }
   ]
 
   return (
-    <div className="flex flex-wrap justify-center gap-4">
-      {suppliers.map((supplier, index) => (
-        <div
-          key={index}
-          className="group relative"
-        >
-          <div className={`absolute inset-0 bg-gradient-to-r ${supplier.color} rounded-xl blur-md opacity-0 group-hover:opacity-30 transition-opacity`}></div>
-          <div className="relative bg-white/80 backdrop-blur-sm px-6 py-3 rounded-xl border border-gray-200 hover:border-gray-300 transition-all hover:scale-105 cursor-pointer">
-            <span className="font-semibold text-gray-700">{supplier.name}</span>
-          </div>
+    <div className="overflow-hidden py-4">
+      <div className="flex animate-scroll">
+        {/* First set of logos */}
+        <div className="flex items-center space-x-8 px-4">
+          {suppliers.map((supplier, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 bg-white px-4 py-3 rounded-lg shadow-sm hover:shadow-lg transition-all hover:scale-105 border border-gray-100"
+            >
+              <img 
+                src={supplier.image} 
+                alt={`${supplier.name} - Business Energy Supplier`}
+                title={`Compare ${supplier.name} business energy prices`}
+                className="h-12 w-auto object-contain"
+                loading="lazy"
+              />
+            </div>
+          ))}
         </div>
-      ))}
+        {/* Duplicate set for seamless scrolling */}
+        <div className="flex items-center space-x-8 px-4" aria-hidden="true">
+          {suppliers.map((supplier, index) => (
+            <div
+              key={`duplicate-${index}`}
+              className="flex-shrink-0 bg-white px-4 py-3 rounded-lg shadow-sm hover:shadow-lg transition-all hover:scale-105 border border-gray-100"
+            >
+              <img 
+                src={supplier.image} 
+                alt={supplier.name}
+                className="h-12 w-auto object-contain"
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
