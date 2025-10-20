@@ -139,12 +139,7 @@ const HomePage = () => {
   return (
     <div className="overflow-hidden">
       {/* Hero Section - Above the Fold SEO Content */}
-      <section className="relative bg-gradient-to-br from-secondary-600 via-secondary-500 to-primary-500 text-white py-24 lg:py-32">
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute w-96 h-96 bg-white/10 rounded-full blur-3xl -top-20 -left-20 animate-pulse"></div>
-          <div className="absolute w-96 h-96 bg-primary-300/20 rounded-full blur-3xl -bottom-20 -right-20 animate-pulse delay-1000"></div>
-          <div className="absolute inset-0 bg-grid-white/5"></div>
-        </div>
+      <section className="relative hero-gradient text-white py-24 lg:py-32">
         
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">

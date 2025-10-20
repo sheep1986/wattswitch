@@ -25,6 +25,7 @@ const ContactPage = lazy(() => import('./pages/ContactPage'))
 const TermsPage = lazy(() => import('./pages/TermsPage'))
 const PrivacyPage = lazy(() => import('./pages/PrivacyPage'))
 const ComplaintsPage = lazy(() => import('./pages/ComplaintsPage'))
+const LOAPage = lazy(() => import('./pages/LOAPage'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 function App() {
@@ -55,6 +56,7 @@ function App() {
               <Route path="/terms" element={<TermsPage />} />
               <Route path="/privacy" element={<PrivacyPage />} />
               <Route path="/complaints" element={<ComplaintsPage />} />
+              <Route path="/loa" element={<LOAPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>

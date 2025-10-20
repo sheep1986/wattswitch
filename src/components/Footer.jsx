@@ -108,9 +108,9 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start">
+            <h3 className="text-lg font-semibold mb-4">Get Started</h3>
+            <div className="space-y-4">
+              <div className="flex items-start">
                 <Phone className="h-5 w-5 mr-3 text-primary-500 flex-shrink-0 mt-1" />
                 <div>
                   <a href="tel:+441618338661" className="text-gray-400 hover:text-primary-500 transition-colors">
@@ -118,22 +118,17 @@ const Footer = () => {
                   </a>
                   <p className="text-sm text-gray-500">Mon-Fri: 9:00 AM - 5:30 PM</p>
                 </div>
-              </li>
-              <li className="flex items-start">
-                <Mail className="h-5 w-5 mr-3 text-primary-500 flex-shrink-0 mt-1" />
-                <a href="mailto:hello@wattswitch.co.uk" className="text-gray-400 hover:text-primary-500 transition-colors">
-                  hello@wattswitch.co.uk
-                </a>
-              </li>
-              <li className="flex items-start">
-                <MapPin className="h-5 w-5 mr-3 text-primary-500 flex-shrink-0 mt-1" />
-                <span className="text-gray-400">
-                  St Ann's House, 5th Floor<br />
-                  St Ann's Square<br />
-                  Manchester M2 7LP
-                </span>
-              </li>
-            </ul>
+              </div>
+              <a 
+                href="https://app.watt.co.uk/company"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 py-3 rounded-full font-semibold hover:from-primary-600 hover:to-primary-700 transition-all shadow-md"
+              >
+                <Zap className="mr-2 h-5 w-5" />
+                Get Free Quote
+              </a>
+            </div>
           </div>
         </div>
 
@@ -141,7 +136,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Watt Switch UK Ltd. All rights reserved.
+              © {currentYear} Watt Utilities UK Ltd. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/terms" className="text-gray-400 hover:text-primary-500 text-sm transition-colors">
