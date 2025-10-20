@@ -21,9 +21,9 @@ const Footer = () => {
               src="/watt-switch-logo.png" 
               alt="Watt Switch - Business Energy Comparison UK" 
               title="Watt Switch Footer Logo"
-              className="h-10 w-auto mb-4 brightness-0 invert"
-              width="167"
-              height="40"
+              className="h-14 w-auto mb-4 brightness-0 invert"
+              width="233"
+              height="56"
               loading="lazy"
             />
             <p className="text-gray-300 mb-4">

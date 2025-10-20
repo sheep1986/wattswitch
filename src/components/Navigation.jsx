@@ -27,16 +27,16 @@ const Navigation = () => {
   return (
     <nav className={`bg-white sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'shadow-xl' : 'shadow-md'}`}>
       <div className="container">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-24 md:h-28">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group" aria-label="Watt Switch - Business Energy Comparison UK">
             <img 
               src="/watt-switch-logo.png" 
               alt="Watt Switch - Compare Business Energy Prices UK" 
               title="Watt Switch - Business Energy Comparison Service"
-              className="h-12 w-auto transition-transform group-hover:scale-105"
-              width="200"
-              height="48"
+              className="h-16 md:h-20 w-auto transition-transform group-hover:scale-105"
+              width="250"
+              height="60"
               loading="eager"
             />
           </Link>
