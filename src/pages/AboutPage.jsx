@@ -1,5 +1,6 @@
 import React from 'react'
-import { Users, Award, Target, Heart } from 'lucide-react'
+import { Users, Award, Target, Heart, ArrowRight, CheckCircle, Building, PoundSterling } from 'lucide-react'
+import TrustPilot from '../components/TrustPilot'
 
 const AboutPage = () => {
   const values = [
@@ -27,13 +28,30 @@ const AboutPage = () => {
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20">
+      {/* Hero Section - Consistent with other pages */}
+      <section className="hero-gradient text-white py-24">
         <div className="container">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">About Watt Switch</h1>
-          <p className="text-xl text-primary-100 max-w-3xl">
-            Your trusted partner in business energy management since 2000
+          <h1 className="hero-title">About Watt Switch</h1>
+          <p className="hero-subtitle max-w-3xl">
+            UK's trusted business energy comparison service helping companies save millions since 2015
           </p>
+          <div className="flex flex-col sm:flex-row gap-4 mt-8">
+            <a 
+              href="https://app.watt.co.uk/company"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-white"
+            >
+              Get Started
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+            <a 
+              href="tel:+441618338661"
+              className="btn-outline"
+            >
+              Call 0161 833 8661
+            </a>
+          </div>
         </div>
       </section>
 

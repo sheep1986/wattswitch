@@ -1,15 +1,33 @@
 import React from 'react'
-import { Phone, Mail, MapPin, Clock } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, ArrowRight, Send } from 'lucide-react'
+import QuoteForm from '../components/QuoteForm'
 
 const ContactPage = () => {
   return (
     <div>
-      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20">
+      <section className="hero-gradient text-white py-24">
         <div className="container">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
-          <p className="text-xl text-primary-100 max-w-3xl">
+          <h1 className="hero-title">Contact Us</h1>
+          <p className="hero-subtitle max-w-3xl">
             Get in touch with our expert team for all your business energy needs
           </p>
+          <div className="flex flex-col sm:flex-row gap-4 mt-8">
+            <a 
+              href="https://app.watt.co.uk/company"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-white"
+            >
+              Get Instant Quote
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+            <a 
+              href="tel:+441618338661"
+              className="btn-outline"
+            >
+              Call Now
+            </a>
+          </div>
         </div>
       </section>
 

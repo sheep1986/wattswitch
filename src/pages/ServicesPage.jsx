@@ -105,13 +105,30 @@ const ServicesPage = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20">
+      <section className="hero-gradient text-white py-24">
         <div className="container">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
-          <p className="text-xl text-primary-100 max-w-3xl">
+          <h1 className="hero-title">Our Services</h1>
+          <p className="hero-subtitle max-w-3xl">
             Comprehensive utility management solutions designed to reduce costs and simplify 
             operations for UK businesses of all sizes
           </p>
+          <div className="flex flex-col sm:flex-row gap-4 mt-8">
+            <a 
+              href="https://app.watt.co.uk/company"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-white"
+            >
+              Get Started
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+            <a 
+              href="tel:+441618338661"
+              className="btn-outline"
+            >
+              Speak to an Expert
+            </a>
+          </div>
         </div>
       </section>
 
@@ -191,18 +208,31 @@ const ServicesPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-primary-600 to-primary-800 text-white">
+      <section className="py-20 hero-gradient text-white">
         <div className="container text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Optimize Your Business Utilities?
           </h2>
-          <p className="text-xl mb-8 text-primary-100">
+          <p className="text-xl mb-10 text-blue-100 max-w-2xl mx-auto">
             Get started with a free consultation and see how much you could save
           </p>
-          <Link to="/get-quote" className="btn-primary bg-white text-primary-600 hover:bg-gray-100">
-            Get Your Free Quote
-            <ArrowRight className="inline-block ml-2 h-5 w-5" />
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="https://app.watt.co.uk/company"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-white"
+            >
+              Get Your Free Quote
+              <ArrowRight className="ml-3 h-6 w-6" />
+            </a>
+            <a 
+              href="tel:+441618338661"
+              className="btn-outline"
+            >
+              Call 0161 833 8661
+            </a>
+          </div>
         </div>
       </section>
     </div>
