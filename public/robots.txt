@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: https://wattswitch.co.uk/sitemap.xml
+
+# Crawl-delay for responsible crawling
+User-agent: *
+Crawl-delay: 1

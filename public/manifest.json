@@ -1,0 +1,18 @@
+{
+  "name": "Watt Switch - Business Energy Solutions",
+  "short_name": "Watt Switch",
+  "description": "Compare. Save. Power Up. Expert business energy consultancy saving UK companies up to 45% on utility bills.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#22c55e",
+  "icons": [
+    {
+      "src": "/watt-switch-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

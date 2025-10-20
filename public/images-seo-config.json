@@ -1,0 +1,68 @@
+{
+  "images": [
+    {
+      "name": "business-energy-comparison-uk.jpg",
+      "alt": "Business energy comparison service UK - Compare electricity and gas prices",
+      "title": "Compare Business Energy Prices with Watt Switch",
+      "width": 1200,
+      "height": 800,
+      "description": "UK businesses comparing energy prices on Watt Switch platform"
+    },
+    {
+      "name": "switch-business-electricity-supplier.jpg",
+      "alt": "Switch business electricity supplier - Save up to 45% on energy bills",
+      "title": "Business Electricity Switching Service",
+      "width": 800,
+      "height": 600,
+      "description": "Business owner switching electricity suppliers through Watt Switch"
+    },
+    {
+      "name": "compare-business-gas-prices.jpg",
+      "alt": "Compare business gas prices from 30+ UK suppliers",
+      "title": "Business Gas Price Comparison",
+      "width": 800,
+      "height": 600,
+      "description": "Comparing commercial gas prices from multiple suppliers"
+    },
+    {
+      "name": "manchester-energy-broker.jpg",
+      "alt": "Manchester based business energy broker - Local energy experts",
+      "title": "Watt Switch Manchester Office",
+      "width": 1200,
+      "height": 800,
+      "description": "Watt Switch energy brokers at Manchester headquarters"
+    },
+    {
+      "name": "business-energy-savings-calculator.jpg",
+      "alt": "Business energy savings calculator - Calculate potential savings",
+      "title": "Energy Savings Calculator",
+      "width": 800,
+      "height": 600,
+      "description": "Calculator showing business energy savings with Watt Switch"
+    },
+    {
+      "name": "uk-energy-suppliers-comparison.jpg",
+      "alt": "UK energy suppliers comparison chart - British Gas, EDF, E.ON",
+      "title": "Compare UK Energy Suppliers",
+      "width": 1200,
+      "height": 600,
+      "description": "Comparison chart of UK business energy suppliers"
+    },
+    {
+      "name": "green-business-energy.jpg",
+      "alt": "Green business energy solutions - Renewable electricity for businesses",
+      "title": "Sustainable Business Energy Options",
+      "width": 800,
+      "height": 600,
+      "description": "Renewable energy options for UK businesses"
+    },
+    {
+      "name": "multi-site-energy-management.jpg",
+      "alt": "Multi-site energy management for UK businesses",
+      "title": "Multi-Site Business Energy Solutions",
+      "width": 1200,
+      "height": 800,
+      "description": "Managing energy across multiple business locations"
+    }
+  ]
+}
