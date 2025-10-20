@@ -21,4 +21,3 @@ const PageTemplate = ({ title, subtitle }) => {
 }
 
 export default PageTemplate
-EOF < /dev/null
