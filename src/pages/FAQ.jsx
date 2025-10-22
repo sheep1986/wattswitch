@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { ChevronDown, Search } from 'lucide-react'
+import OptimizedImage from '../components/OptimizedImage'
 
 const FAQ = () => {
   const [searchTerm, setSearchTerm] = useState('')
@@ -111,8 +112,17 @@ const FAQ = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-secondary-600 to-primary-500 text-white py-20">
-        <div className="container">
+      <section className="relative bg-gradient-to-br from-secondary-600 to-primary-500 text-white py-20">
+        <div className="absolute inset-0 overflow-hidden">
+          <OptimizedImage
+            src="/images/energy-consultation.jpg"
+            alt="Energy experts consulting with business clients about electricity and gas options"
+            className="w-full h-full object-cover opacity-20"
+            title="Business energy consultation and advice"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-secondary-600/90 to-primary-500/90"></div>
+        </div>
+        <div className="container relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Business Energy Comparison FAQs
           </h1>

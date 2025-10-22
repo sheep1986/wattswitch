@@ -111,21 +111,27 @@ const HomePage = () => {
       author: "Sarah Johnson",
       company: "Tech Solutions Ltd, London",
       rating: 5,
-      savings: "£12,000 per year saved"
+      savings: "£12,000 per year saved",
+      image: "/images/customer-1.jpg",
+      industry: "Technology"
     },
     {
       quote: "Best business energy comparison service in the UK. Our energy broker was professional and saved us thousands on gas and electricity.",
       author: "Michael Chen",
       company: "Restaurant Group UK, Manchester",
       rating: 5,
-      savings: "£8,500 per year saved"
+      savings: "£8,500 per year saved",
+      image: "/images/customer-2.jpg",
+      industry: "Hospitality"
     },
     {
       quote: "We switched business gas and electricity through Watt Switch and saved over £50,000 this year. Highly recommend their energy switching service!",
       author: "Emma Williams",
       company: "Manufacturing Co., Birmingham",
       rating: 5,
-      savings: "£50,000+ per year saved"
+      savings: "£50,000+ per year saved",
+      image: "/images/customer-3.jpg",
+      industry: "Manufacturing"
     }
   ]
 
@@ -392,11 +398,19 @@ const HomePage = () => {
                     <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" aria-label="5 star rating" />
                   ))}
                 </div>
-                <p className="text-gray-700 mb-4 italic">"{testimonial.quote}"</p>
-                <div className="text-primary-600 font-bold mb-2">{testimonial.savings}</div>
-                <div>
-                  <p className="font-bold text-gray-900">{testimonial.author}</p>
-                  <p className="text-sm text-gray-600">{testimonial.company}</p>
+                <p className="text-gray-700 mb-6 italic">"{testimonial.quote}"</p>
+                <div className="text-primary-600 font-bold mb-4">{testimonial.savings}</div>
+                <div className="flex items-center">
+                  <OptimizedImage
+                    src={testimonial.image}
+                    alt={`${testimonial.author} from ${testimonial.industry} industry`}
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                    title={`${testimonial.author} - satisfied customer`}
+                  />
+                  <div>
+                    <p className="font-bold text-gray-900">{testimonial.author}</p>
+                    <p className="text-sm text-gray-600">{testimonial.company}</p>
+                  </div>
                 </div>
               </div>
             ))}

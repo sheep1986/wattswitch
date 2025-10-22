@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Flame, TrendingDown, Shield, Clock, ArrowRight, CheckCircle, PoundSterling, Thermometer } from 'lucide-react'
 import QuoteForm from '../components/QuoteForm'
 import SupplierLogos from '../components/SupplierLogos'
+import OptimizedImage from '../components/OptimizedImage'
 
 const BusinessGas = () => {
   const benefits = [
@@ -26,6 +27,12 @@ const BusinessGas = () => {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-orange-600 via-red-500 to-primary-500 text-white py-24">
         <div className="absolute inset-0 overflow-hidden">
+          <OptimizedImage
+            src="/images/gas-flame.jpg"
+            alt="Industrial gas equipment and energy infrastructure"
+            className="w-full h-full object-cover opacity-20"
+            title="Business gas supply and heating solutions"
+          />
           <div className="absolute inset-0 bg-gradient-to-br from-orange-600/90 to-primary-500/90"></div>
         </div>
         <div className="container relative z-10">

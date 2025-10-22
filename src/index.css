@@ -117,6 +117,25 @@
     animation: scroll 30s linear infinite;
   }
 
+  /* Supplier logos carousel */
+  .supplier-logos-container {
+    @apply relative;
+  }
+
+  .supplier-logos-scroll {
+    @apply flex items-center;
+    animation: scroll-logos 40s linear infinite;
+    width: max-content;
+  }
+
+  .supplier-logo-item {
+    @apply flex-shrink-0 bg-white px-6 py-3 mx-4 rounded-lg shadow-sm hover:shadow-lg transition-all hover:scale-105 border border-gray-100;
+    min-width: 140px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -165,6 +184,15 @@
     }
     100% {
       transform: translateX(-50%);
+    }
+  }
+
+  @keyframes scroll-logos {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-50% - 16px));
     }
   }
 

@@ -22,13 +22,13 @@ const SupplierLogos = () => {
 
   return (
     <div className="overflow-hidden py-4">
-      <div className="flex animate-scroll">
-        {/* First set of logos */}
-        <div className="flex items-center space-x-8 px-4">
+      <div className="supplier-logos-container">
+        <div className="supplier-logos-scroll">
+          {/* First set of logos */}
           {suppliers.map((supplier, index) => (
             <div
               key={index}
-              className="flex-shrink-0 bg-white px-4 py-3 rounded-lg shadow-sm hover:shadow-lg transition-all hover:scale-105 border border-gray-100"
+              className="supplier-logo-item"
             >
               <img 
                 src={supplier.image} 
@@ -39,13 +39,12 @@ const SupplierLogos = () => {
               />
             </div>
           ))}
-        </div>
-        {/* Duplicate set for seamless scrolling */}
-        <div className="flex items-center space-x-8 px-4" aria-hidden="true">
+          {/* Duplicate set for seamless scrolling */}
           {suppliers.map((supplier, index) => (
             <div
               key={`duplicate-${index}`}
-              className="flex-shrink-0 bg-white px-4 py-3 rounded-lg shadow-sm hover:shadow-lg transition-all hover:scale-105 border border-gray-100"
+              className="supplier-logo-item"
+              aria-hidden="true"
             >
               <img 
                 src={supplier.image} 

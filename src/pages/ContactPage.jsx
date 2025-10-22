@@ -1,6 +1,7 @@
 import React from 'react'
 import { Phone, Mail, MapPin, Clock, ArrowRight, Send } from 'lucide-react'
 import QuoteForm from '../components/QuoteForm'
+import OptimizedImage from '../components/OptimizedImage'
 
 const ContactPage = () => {
   return (
@@ -92,6 +93,16 @@ const ContactPage = () => {
                 <a href="tel:+441618338661" className="btn-primary inline-block">
                   Call 0161 833 8661
                 </a>
+              </div>
+
+              {/* Office Image */}
+              <div className="mt-12">
+                <OptimizedImage
+                  src="/images/office-team.jpg"
+                  alt="Professional energy consultants working in modern Manchester office"
+                  className="w-full h-64 object-cover rounded-xl shadow-lg"
+                  title="Watt Switch energy experts team in Manchester office"
+                />
               </div>
             </div>
 

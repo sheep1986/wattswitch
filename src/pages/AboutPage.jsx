@@ -1,6 +1,7 @@
 import React from 'react'
 import { Users, Award, Target, Heart, ArrowRight, CheckCircle, Building, PoundSterling } from 'lucide-react'
 import TrustPilot from '../components/TrustPilot'
+import OptimizedImage from '../components/OptimizedImage'
 
 const AboutPage = () => {
   const values = [
@@ -75,6 +76,15 @@ const AboutPage = () => {
                 As the energy market evolves, we continue to innovate and adapt, ensuring our clients 
                 always have access to the best rates and most suitable energy solutions for their needs.
               </p>
+            </div>
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-100 to-secondary-100 rounded-2xl transform rotate-3"></div>
+              <OptimizedImage
+                src="/images/modern-office.jpg"
+                alt="Modern business office with energy efficient lighting and professional team"
+                className="relative z-10 w-full h-80 object-cover rounded-2xl shadow-2xl"
+                title="Professional business energy consultancy office"
+              />
             </div>
             <div className="bg-gray-100 rounded-xl p-8">
               <h3 className="text-2xl font-bold mb-6">By the Numbers</h3>
