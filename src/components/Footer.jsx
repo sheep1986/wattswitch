@@ -57,9 +57,9 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/get-quote" className="text-gray-400 hover:text-primary-500 transition-colors">
+                <a href="https://app.watt.co.uk/company" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-500 transition-colors">
                   Get a Quote
-                </Link>
+                </a>
               </li>
               <li>
                 <Link to="/faq" className="text-gray-400 hover:text-primary-500 transition-colors">

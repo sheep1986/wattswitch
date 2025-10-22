@@ -19,7 +19,6 @@ const EnergyAuditing = lazy(() => import('./pages/EnergyAuditing'))
 const MultiSiteEnergy = lazy(() => import('./pages/MultiSiteEnergy'))
 const BillValidation = lazy(() => import('./pages/BillValidation'))
 const ContractNegotiation = lazy(() => import('./pages/ContractNegotiation'))
-const GetQuote = lazy(() => import('./pages/GetQuote'))
 const FAQ = lazy(() => import('./pages/FAQ'))
 const ContactPage = lazy(() => import('./pages/ContactPage'))
 const TermsPage = lazy(() => import('./pages/TermsPage'))
@@ -50,7 +49,6 @@ function App() {
               <Route path="/multi-site-energy" element={<MultiSiteEnergy />} />
               <Route path="/bill-validation" element={<BillValidation />} />
               <Route path="/contract-negotiation" element={<ContractNegotiation />} />
-              <Route path="/get-quote" element={<GetQuote />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/terms" element={<TermsPage />} />
